@@ -19,11 +19,22 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/WasThreadStackProcessor.rb"
+    "WasThreadStackProcessor.gemspec",
+    "autotest/discover.rb",
+    "lib/WasThreadStackProcessor.rb",
+    "lib/threadStack.rb",
+    "lib/threadStackCombinator.rb",
+    "lib/threadStackExtractor.rb",
+    "spec/WasThreadStackProcessor_spec.rb",
+    "spec/spec_helper.rb",
+    "spec/threadStackCombinator_spec.rb",
+    "spec/threadStackExtractor_spec.rb",
+    "spec/threadStack_spec.rb"
   ]
   s.homepage = "http://github.com/japaz/WasThreadStackProcessor"
   s.licenses = ["MIT"]
