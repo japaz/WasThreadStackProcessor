@@ -1,4 +1,5 @@
 source "http://rubygems.org"
+source "http://gems.github.com"
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
@@ -12,4 +13,12 @@ group :development do
   gem "jeweler", "~> 1.8.3"
   gem "rcov", ">= 0"
   gem "hirb", "~> 0.6.2"
+end
+
+group :xzibit do
+	gem "WasThreadStackProcessor", :path => '.'
+end
+
+group :debug do
+  gem (RUBY_VERSION =~ /^1\.9/ ? "ruby-debug19" : "ruby-debug")
 end

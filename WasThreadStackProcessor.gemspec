@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alberto Paz"]
-  s.date = "2012-05-22"
+  s.date = "2012-05-23"
   s.description = "This utility extracts all the Thread Stacks from a set of thread dump files of a WebSphere Application Server and generates a unique tree with all the threads"
   s.email = "alberto.pazjimenez@gmail.com"
   s.extra_rdoc_files = [

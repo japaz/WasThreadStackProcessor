@@ -30,17 +30,3 @@ class WasThreadStackProcessor
 		""
 	end
 end
-
-threadStackCombinator = ThreadStackCombinator.new
-wasThreadStackProcessor = WasThreadStackProcessor.new(threadStackCombinator)
-
-ARGV.each do |file|
-	File.open(file, "r") do |infile|
-		wasThreadStackProcessor.process(infile)
-	end
-end
-
-extend Hirb::Console
-view  wasThreadStackProcessor, :class=>:parent_child_tree, :type=>:basic, :value_method=>:text_count, :indent=>1, :children_method=>:children_sorted
-
-# wasThreadStackProcessor.threadStackCombinator.combinedThreadStacks.each { |combinedThreadStack| puts combinedThreadStack.call.text}
