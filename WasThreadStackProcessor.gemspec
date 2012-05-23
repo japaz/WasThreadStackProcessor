@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.date = "2012-05-23"
   s.description = "This utility extracts all the Thread Stacks from a set of thread dump files of a WebSphere Application Server and generates a unique tree with all the threads"
   s.email = "alberto.pazjimenez@gmail.com"
+  s.executables = ["WasThreadStackProcessor"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,6 +27,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "WasThreadStackProcessor.gemspec",
     "autotest/discover.rb",
+    "bin/WasThreadStackProcessor",
     "lib/WasThreadStackProcessor.rb",
     "lib/threadStack.rb",
     "lib/threadStackCombinator.rb",
