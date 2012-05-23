@@ -24,7 +24,8 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Alberto Paz"]
   # dependencies defined in Gemfile
 end
-# Jeweler::RubygemsDotOrgTasks.new
+
+Jeweler::RubygemsDotOrgTasks.new
 
 
 require 'rspec/core'
