@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+
 
 require 'threadStackCombinator'
 require 'threadStackExtractor'
