@@ -9,7 +9,8 @@ class ThreadStackExtractor
 
 		stack = Array.new()
 		while (line = @file.gets)
-			case line
+      encoded = line.encode('UTF-8', 'UTF-8', { :invalid => :replace })
+			case encoded
 				when /^3XMTHREADINFO\s*(.*)/ then
 					stacks << stack unless stack.empty?
 					stack = Array.new()	
