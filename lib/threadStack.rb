@@ -28,11 +28,11 @@ class ThreadStack
 		end
 
 		def text_count
-			"#{text} (#{count})"
+			"#{text} - (#{count})"
 		end
 
 		def children_sorted
-		children.compact.sort { |a,b| b.count <=> a.count}
+		  children.compact.sort { |a,b| b.count <=> a.count}
 		end
 	end
 
@@ -41,7 +41,7 @@ class ThreadStack
 	def initialize(stack)
 		previousCall = nil
 		stack.each { |text|
-			call = Call.new(text)
+			call = Call.new(text.chomp)
 			if not previousCall.nil?
 				call.children << previousCall
 			end

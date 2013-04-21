@@ -2,6 +2,12 @@
 
 require 'WasThreadStackProcessor'
 
+unless ARGV.length > 0
+  puts "Dude, not any argument."
+  puts "Usage: WasThreadStackProcessor javacore_files\n"
+  exit
+end
+
 threadStackCombinator = ThreadStackCombinator.new
 wasThreadStackProcessor = WasThreadStackProcessor.new(threadStackCombinator)
 
