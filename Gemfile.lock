@@ -39,7 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   WasThreadStackProcessor!
-  bundler (~> 1.1.0)
+  bundler (>= 1.1.0)
   hirb (~> 0.6.2)
   jeweler (~> 1.8.3)
   rdoc (~> 3.12)
